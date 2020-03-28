@@ -52,7 +52,7 @@ static void get_exe_dir(char *buf, int sz) {
   }
 }
 
-
+#undef main
 
 int main(int argc, char **argv) {
 #ifdef _WIN32
@@ -80,6 +80,8 @@ int main(int argc, char **argv) {
 
   lua_State *L = luaL_newstate();
   luaL_openlibs(L);
+  luaopen_utf8(L);
+  
   api_load_libs(L);
 
 

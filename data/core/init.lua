@@ -1,3 +1,4 @@
+require "compat53"
 require "core.strict"
 local common = require "core.common"
 local config = require "core.config"
