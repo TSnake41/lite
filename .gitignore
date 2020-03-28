@@ -1,0 +1,4 @@
+libluajit.a
+lite.exe
+res.res
+*.o
